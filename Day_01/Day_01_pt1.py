@@ -11,8 +11,10 @@ def count_increases(array: list) -> list:
     #return the sum
     return sum(booleanArrayOfIncrease)
 
-#get a list of inputs from the file given
-inputArray = get_digits_from_file("Day_01_input.txt")
+if __name__ == "__main__":
 
-#print the answer
-print(count_increases(inputArray))
+    #get a list of inputs from the file given
+    inputArray = get_digits_from_file("Day_01_input.txt")
+
+    #print the answer
+    print(count_increases(inputArray))
