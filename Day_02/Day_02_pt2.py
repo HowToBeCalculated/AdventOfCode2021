@@ -33,7 +33,7 @@ def calculate_position_given_velocity(zippedVelocity: Iterator[Tuple[str, str]])
         value = int(value)
         value = value * directionMultiplier
 
-        #record the update in or position
+        #record the update in our position dict
         position[directionType] += value
 
         #add in new logic
