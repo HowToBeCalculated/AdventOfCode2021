@@ -1,15 +1,4 @@
-with open("Day_01_pt1_input.txt") as file:
-    data = file.readlines()
-
-inputArray = []
-
-def clean_digit_from_string(string: str) -> str:
-
-    #retain all numeric characters and join then together
-    stringOfDigits = "".join([char for char in string if char.isnumeric()])
-
-    #return the string of digits casted to integer
-    return int(stringOfDigits)
+from get_digits_from_file import get_digits_from_file
 
 def count_increases(array: list) -> list:
     
@@ -22,9 +11,7 @@ def count_increases(array: list) -> list:
     #return the sum
     return sum(booleanArrayOfIncrease)
 
-#read each line and append it to our input array after cleaning it
-for line in data:
-    inputArray.append(clean_digit_from_string(line))
+inputArray = get_digits_from_file("Day_01_pt1_input.txt")
 
 #print the answer
 print(count_increases(inputArray))
