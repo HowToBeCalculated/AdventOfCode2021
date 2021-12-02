@@ -1,4 +1,4 @@
-with open("Day_01_input.txt") as file:
+with open("Day_01_pt1_input.txt") as file:
     data = file.readlines()
 
 inputArray = []
