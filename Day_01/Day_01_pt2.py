@@ -15,7 +15,7 @@ def get_three_in_row_sums(array: list) -> List[int]:
     return list(summed_array)
 
 #get a list of inputs from the file given
-inputArray = get_digits_from_file("Day_01_pt2_input.txt")
+inputArray = get_digits_from_file("Day_01_input.txt")
 
 #follow the directions to sum up the triple rows
 summed_array = get_three_in_row_sums(inputArray)
