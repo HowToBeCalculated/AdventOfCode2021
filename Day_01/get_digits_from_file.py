@@ -22,4 +22,8 @@ def get_digits_from_file(file_name: str) -> List[int]:
         inputArray.append(clean_digit_from_string(line))
 
     return inputArray
-    
+
+if __name__ == "__main__":
+
+    #test reading the input file
+    print(get_digits_from_file("Day_01_input.txt"))
