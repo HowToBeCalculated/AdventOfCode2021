@@ -1,4 +1,4 @@
-from typing import List, Iterator, Tuple
+from typing import List
 
 from extract_binary_from_file import extract_binary_from_file
 
@@ -34,8 +34,8 @@ def get_common_binary_of_each_index(binaryArry: List[List[int]]) -> List[int]:
         #get the average by dividing by number of list elements
         indexAvg = indexSum / numberOfElements
 
-        #round the result and it will give the common binary
-        common = int(round(indexAvg, 0))
+        #determine if the index leans towards 0 or 1
+        common = int(avgOfIndex >= .5)
 
         #append to our list
         commonBinary.append(common)
