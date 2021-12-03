@@ -35,7 +35,7 @@ def get_common_binary_of_each_index(binaryArry: List[List[int]]) -> List[int]:
         indexAvg = indexSum / numberOfElements
 
         #determine if the index leans towards 0 or 1
-        common = int(avgOfIndex >= .5)
+        common = int(indexAvg >= .5)
 
         #append to our list
         commonBinary.append(common)
